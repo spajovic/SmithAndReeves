@@ -1,0 +1,837 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color:rgb(253, 253, 253);
+    width: 100%;
+    color:#1A1A1A;
+    font-family: 'Playfair Display', serif;
+    /* Image style */
+    #scrollUp {
+        background-image: url("../img/top.png");
+        bottom: 20px;
+        right: 20px;
+        width: 38px;    /* Width of image */
+        height: 38px;   /* Height of image */
+    }
+    #mreze{
+        position: fixed;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction:column;
+        right:30px;
+        a{
+            color: #1A1A1A;
+            text-decoration: none;
+            padding-top: 25px;
+            font-size: 19px;
+        }
+        a:hover{
+            color:#A67A4B;
+        }
+    }
+    .drzac{
+        width:87%;
+        margin:0px auto;
+        // Modal
+        .modal{
+            display: none;
+            position:fixed;
+            z-index:16;
+            left:0;
+            top:0;
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            background-color:rgba(0,0,0,0.5);
+            .modal-sadrzaj{
+                background-color: #e6e6e6;
+                margin:10% auto;
+                padding:20px;
+                width:70%;
+                box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.2);
+                animation-name: otvori;
+                animation-duration: 1s;
+                @keyframes otvori {
+                    from{opacity:0}
+                    to{opacity:1}
+                }
+                #tabproiz{
+                    width:80%;
+                    .tab-proiz{
+                        width:100%;
+                        tbody{
+                            tr{
+                                width:100%;
+                                display: flex;
+                                justify-content: space-around;
+                                padding-top: 7px;
+                                td{
+                                    width:18%;
+                                    height:60px;
+                                    text-align: center;
+                                    font-size: 15px;
+                                    img{
+                                        width:50px;
+                                        height:50px;
+                                    }
+                                    a{
+                                        cursor: pointer;
+                                        padding:2px;
+                                        color:white;
+                                        background-color: #A67A4B;
+                                        border: 1px solid #A67A4B;
+                                    }
+                                    a:hover{
+                                        color:#A67A4B;
+                                        background-color: white;
+                                    }
+                                    
+                                }
+                                
+                            }
+                        }
+                    }
+                    #total{
+                        width:100%;
+                        height: 60px;
+                        text-align: right;
+                        p{
+                            padding-right: 25px;
+                        }
+                    }
+                }
+                #zatvori{
+                    color:rgb(112, 111, 111);
+                    float: right;
+                    font-size: 30px;
+                }
+                #zatvori:hover{
+                    color:#A67A4B;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        #autor{
+            #zatvori2{
+                color:rgb(112, 111, 111);
+                float: right;
+                font-size: 30px;
+            }
+            #zatvori2:hover{
+                color:#A67A4B;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            #autor-txt{
+                text-align: center;
+            }
+            #autor-slika{
+                height:auto;
+                margin:0px auto;
+                width:20%;
+                padding-top: 25px;
+                img{
+                    width:100%;
+                    height:auto;
+                }
+            }
+        }
+        // Kraj Modala
+        header{
+            background-color:#fdfdfd;
+            width:100%;
+            height: auto;
+            display:flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            padding-top: 6px;
+            position: sticky;
+            top:0;
+            z-index: 5;
+            #logo{
+                height:90%;
+               a{
+                   img{
+                       height: 70%;
+                   }
+               } 
+            }
+            nav{
+                width:auto;
+                overflow: hidden;
+                position: relative;
+                padding-top: 50px;
+                ul{
+                    display: flex;
+                    justify-content: space-around;
+                    width:auto;
+                    li{
+                        list-style: none;
+                        width:auto;
+                        a{
+                            padding-right: 50px;
+                            width:auto;
+                            text-decoration: none;
+                            font-size: 16px;
+                            letter-spacing: 1px;
+                            color:#1A1A1A;
+                            font-family: 'Playfair Display', serif;
+    
+                        }
+                        a:hover{
+                            color:#A67A4B;
+                        }
+                        
+                    }
+                }
+                
+            }
+        }
+        #slajder{
+            width:100%;
+            height:760px;
+            background-image: url('../img/pozadina.jpg');
+            background-position: center top;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            #txt{
+                width:40%;
+                height: 300px;
+                margin:0px auto;
+                text-align: center;
+                color:white;
+                h1{
+                    font-size: 56px;
+                    padding-bottom: 5px;
+                    letter-spacing: 1px;
+                }
+
+            }
+        }
+        // DIV LINKOVI
+        #slika-link{
+            width:100;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-bottom: 40px;
+
+            .onama{
+                width:46%;
+                height: 500px;
+                margin-top: 60px;
+                display: flex;
+                align-items: center;
+                .tekst{
+                    margin:0px auto;
+                    h3 a{
+                        color: white;
+                        font-size: 40px;
+                        text-decoration: none;
+                    }
+                    h3 a:hover{
+                        color:#A67A4B;
+                    }
+                }
+            }
+            #prvi{
+                background-image:url('../img/link2.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: scroll;
+
+            }
+            #drugi{
+                background-image:url('../img/link1.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: scroll;
+            }
+
+        }
+    }
+    #ceo{
+        width:100%;
+        background-color:#e6e6e6;
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        .drzac{
+            #drz{
+                width:100%;
+                text-align: center;
+                height: auto;
+                padding:30px 0px 65px 0px;
+                h3{
+                    font-family: 'Playfair Display', serif;
+                    letter-spacing: 1px;
+                    font-weight: normal;
+                    font-size: 20px;
+                }
+                #sortiraj2{
+                    width:100%;
+                    height:auto;
+                    padding: 30px 0px 10px 0px;
+                    #sortiranje{
+                        width:35%;
+                        margin: 0px auto;
+                        display: flex;
+                        justify-content: space-between;
+                        select{
+                            border: none;
+                            font-family: 'Playfair Display', serif;
+                            padding:7px;
+                        }
+                    }
+
+                }
+                #proizvodi{
+                    width:100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    padding-top: 45px;
+                    padding-bottom: 45px;
+                    .proiz{
+                        width:20%;
+                        background-color:#fdfdfd ;
+                        height: 403px;
+                        padding: 5px 5px 5px 5px;
+                        margin-bottom: 12px;
+                        position: relative;
+                            .best-seller{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width:33%;
+                                height:30px;
+                                background-color: #2A3D45;
+                                color: white;
+                            }
+                            .slika-pr{
+                                width:100%;
+                                height:70%;
+                                background-color: #9b9b9b;
+                                img{
+                                    width:100%;
+                                    height: 100%;
+                                }
+                            }
+                            .tekst-pr{
+                                width:100%;
+                                text-align: center;
+                                .naziv{
+                                    font-size: 16px;
+                                    text-align: center;
+                                    padding-top: 3px;
+                                }
+                                .ukorpu{
+                                    a{
+                                        text-decoration: none;
+                                        border: 1px solid #A67A4B;
+                                        color:#A67A4B;
+                                        padding: 1px;
+                                        font-family: 'Playfair Display', serif;
+                                    }
+                                    a:hover{
+                                        background-color: #A67A4B;
+                                        color:white;
+                                        
+                                    }
+                                }
+                            }
+                            .ocena{
+                                color:rgb(255, 175, 1);
+                                width:100%;
+                                font-size: 15px;
+                                padding:5px 0px 8px 0px;
+                            }
+                            .cena{
+                                width:30%;
+                                margin:0px auto;
+                                display: flex;
+                                justify-content: space-between;
+                                padding-top: 3px;
+                                font-size: 16px;
+                            }
+                            .delivery{
+                                font-size: 12px;
+                                padding-top: 5px;
+                            }
+
+                    }
+                }
+            }
+            // SLIKA - FORMA
+            #about{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                height: 400px;
+                background-color: #fcfcfc;
+                #onama-txt{
+                    width:50%;
+                    background-image: url(../img/ispomoc.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+                #forma-tekst{
+                    padding:45px 0px 60px 0px;
+                    width:50%;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    h3{
+                        font-size: 20px;
+                        font-weight: normal;
+                        letter-spacing: 1px;
+                    }
+                    form{
+                        input{
+                            margin-top: 10px;
+                            font-family:'Playfair Display', serif ;
+                        }
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width:100%;
+                        padding-top: 35px;
+                        .duzina{
+                            width:50%;
+                            padding: 7px;
+                        }
+                        #komentar{
+                            width:50%;
+                            padding:7px;
+                            height:35px;
+                            margin-top: 10px;
+                            font-family:'Playfair Display', serif ;
+
+                        }
+                        #dugme1{
+                            width:25%;
+                            border:none;
+                            padding:7px;
+                        }
+                        #dugme1:hover{
+                            background-color:#A67A4B;
+                            color:white;
+                            cursor: pointer;
+                            
+
+                        }
+                    }
+                }
+            }
+            #usluge{
+                width:100%;
+                display: flex;
+                justify-content: space-between;
+                padding-top: 50px;
+                background-color:#e6e6e6;
+                .usluga{
+                    width:30%;
+                    text-align: center;
+                    color:#1A1A1A;
+                    font-weight: normal;
+                    i{
+                        font-size: 20px;
+                    }
+                    h4{
+                        font-weight: normal;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        font-size: 20px;
+                        font-family: 'Playfair Display', serif;
+
+                    }
+                }
+            }
+        }
+
+    }
+    footer{
+        width:100%;
+        padding-bottom: 50px;
+        .futer{
+            display: flex;
+            justify-content: space-between;
+            height: inherit;
+            #futer-levo{
+                padding-top: 45px;
+                width:40%;
+                display: flex;
+                justify-content: space-between;
+                .info{
+                    ul li{
+                        padding: 5px;
+                        list-style: none;
+                    }
+                    ul li a {
+                        text-decoration: none;
+                        color:#1A1A1A;
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                    }
+                    ul li a:hover{
+                        color:#A67A4B;
+                    }
+
+                    font-family: 'Playfair Display', serif;
+                    .dole{
+                        padding-top: 20px;
+                    }
+                    p{
+                        padding:1px;
+                    }
+                }
+                
+            }
+            #futer-desno{
+                padding-top: 45px;
+                width:30%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    padding-top:12px;
+                    width:100%;
+                    #email{
+                        padding: 7px;
+                        width:70%;
+                    }
+                    #dugme{
+                        padding:7px;
+                        border:none;
+                        width: 75%;
+                        margin-top: 8px;
+                    }
+                    #dugme:hover{
+                        color:white;
+                        background-color: #A67A4B;
+                    }
+                }
+                .prava{
+                    font-size: 14px;
+                    color:#9b9b9b;
+                    padding-top: 30px;
+                    a{
+                        color : #1A1A1A;
+                    }
+                }
+            }
+        }
+
+    }
+    // MALO SVI PROIZVODI strana
+    #sviProizvodi{
+        width:100%;
+        height: 500px;
+        background-color: #e6e6e6;
+        .drzac{
+            height: inherit;
+            #sort{
+                width:100%;
+                background-color:salmon;
+                height: 80px;
+            }
+            h3{
+                text-align: center;
+                font-weight: normal;
+                font-family: 'Playfair Display', serif;
+                padding: 20px 0px 20px 0px;
+
+            }
+        }
+    }
+    // responsive
+}
+@media only screen and (max-width:1300px) {
+    body #ceo .drzac #drz #proizvodi .proiz{
+        width:22%;
+    }
+}
+@media only screen and (max-width:1200px) {
+    body #ceo .drzac #drz #proizvodi .proiz{
+        width:26%;
+    }
+    body #ceo .drzac #drz #sortiraj2 #sortiranje{
+        width:40%;
+    }
+    body .drzac #autor #autor-slika{
+        width:30%;
+    }
+    body .drzac #slajder{
+        height: 700px;
+    }
+}
+@media only screen and (max-width:1030px) {
+    body #ceo .drzac #drz #proizvodi .proiz .best-seller{
+        width:41%;
+    }
+    body #ceo .drzac #drz #sortiraj2 #sortiranje{
+        width:50%;
+    }
+    body .drzac #slajder{
+        height: 650px;
+    }
+}
+@media only screen and (max-width:1000px) {
+    body #ceo .drzac #drz #proizvodi .proiz{
+        width:33%;
+    }
+    body #ceo .drzac #about{
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        width:90%;
+        margin:0px auto;
+    }
+    body #ceo .drzac #about #onama-txt{
+        height:400px;
+        width:100%;
+    }
+    body #ceo .drzac #about #forma-tekst{
+        padding:5px 0px 25px 0px;
+        margin: 0px auto;
+        width:70%;
+    }
+    body .drzac #slika-link{
+        padding-top: 60px;
+    }
+    body .drzac #slika-link .onama{
+        width:65%;
+        margin:0px auto;
+    }
+    body .drzac #slika-link #drugi{
+        margin-top: 35px;
+    }
+    body footer .futer #futer-levo{
+        width:60%;
+    }
+    body footer .futer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    body .drzac header nav ul li a{
+        padding-right: 25px;
+    }
+    body .drzac header #logo a img{
+        height:75px;
+    }
+    body .drzac .modal .modal-sadrzaj #tabproiz{
+        width:90%;
+    }
+}
+@media only screen and (max-width:830px) {
+    body #ceo .drzac #drz #proizvodi .proiz{
+        width:40%;
+    }
+    body #ceo .drzac #drz #sortiraj2 #sortiranje{
+        width:60%;
+    }
+    body #ceo .drzac #about #forma-tekst{
+        padding:5px 0px 25px 0px;
+        margin: 0px auto;
+        width:90%;
+    }
+    body .drzac #slajder{
+        height: 600px;
+    }
+    body .drzac #slajder #txt h1{
+        font-size: 46px;
+    }
+    body #mreze{
+        right: 15px;
+    }
+    body .drzac header nav{
+        padding-top: 44px;
+    }
+}
+@media only screen and (max-width:720px) {
+    body #ceo .drzac #drz #proizvodi .proiz{
+        width:50%;
+    }
+    body #mreze{
+        display:none;
+    }
+    body #ceo .drzac #drz #sortiraj2 #sortiranje{
+        width:70%;
+    }
+    body #ceo .drzac #usluge{
+        display:none;
+    }
+    body .drzac #slika-link .onama{
+        width:75%;
+    }
+    body .drzac #slika-link #prvi{
+        background-position: center;
+    }
+    body footer .futer{
+        display: flex;
+        flex-direction: column;
+    }
+    body footer .futer #futer-levo{
+        width:60%;
+        margin:0px auto;
+    }
+    body footer .futer #futer-desno{
+        width:60%;
+        margin: 0px auto;
+    }
+    body .drzac #autor #autor-txt{
+        font-size: 15px;
+    }
+    body .drzac #autor #autor-slika{
+        width:45%;
+    }
+    body .drzac #slajder{
+        height: 500px;
+        background-position: center;
+    }
+    body .drzac #slajder #txt h1{
+        font-size: 36px;
+    }
+    body .drzac header nav ul li .prvi{
+        display: none;
+    }
+    body .drzac header #logo a img{
+        height:70px;
+    }
+    body .drzac .modal .modal-sadrzaj #tabproiz{
+        width:95%;
+    }
+}
+@media only screen and (max-width:605px) {
+    body #ceo .drzac #drz #proizvodi .proiz{
+        width:55%;
+    }
+    body #ceo .drzac #drz #sortiraj2 #sortiranje{
+        width:90%;
+    }
+    body .drzac #slika-link .onama{
+        height:350px;
+    }
+    body #ceo .drzac #about #onama-txt{
+        height:350px;
+    }
+    body footer .futer #futer-levo{
+        display: flex;
+        flex-direction: column;
+    }
+    body footer .futer #futer-levo .info{
+        padding-bottom: 10px;
+    }
+    body .drzac header nav ul li .drugi{
+        display: none;
+    }
+}
+@media only screen and(max-width:550px){
+    body .drzac .modal .modal-sadrzaj #tabproiz .tab-proiz tbody tr td{
+        font-size: 13px;
+    }
+    body .drzac .modal .modal-sadrzaj #tabproiz .tab-proiz tbody tr td img{
+        width:45px;
+        height:45px;
+    }
+}
+@media only screen and (max-width:475px) {
+    body #ceo .drzac #drz #proizvodi .proiz{
+        width:70%;
+    }
+    body #ceo .drzac #drz #sortiraj2 #sortiranje{
+        width:100%;
+    }
+    body #ceo .drzac #drz #sortiraj2 #sortiranje select{
+        width:33%;
+    }
+    body #ceo .drzac #drz #proizvodi .proiz .slika-pr img{
+        height:90%;
+    }
+    body #ceo .drzac #drz #proizvodi .proiz .slika-pr{
+        background-color: #fcfcfc;
+    }
+    body #ceo .drzac #drz #proizvodi .proiz{
+        height:396px;
+    }
+    body .drzac #slika-link .onama{
+        width:85%;
+    }
+    body footer .futer #futer-desno{
+        width:90%;
+        margin:0px auto;
+    }
+    body footer .futer #futer-levo{
+        width:90%;
+    }
+    body .drzac #slajder{
+        height: 400px;
+        background-position: center;
+    }
+    body .drzac header nav ul li .treci{
+        display: none;
+    }
+    body .drzac .modal .modal-sadrzaj #tabproiz .tab-proiz tbody tr{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:420px){
+    body .drzac header nav ul li a{
+        padding-right: 8px;
+    }
+    body .drzac .modal .modal-sadrzaj #tabproiz .tab-proiz tbody tr td{
+        font-size: 11px;
+    }
+    body .drzac .modal .modal-sadrzaj #tabproiz .tab-proiz tbody tr td img{
+        width:40px;
+        height:40px;
+    }
+    body .drzac .modal .modal-sadrzaj #tabproiz .tab-proiz tbody tr{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width:360px) {
+    body #ceo .drzac #drz #proizvodi .proiz{
+        width:70%;
+    }
+    body .drzac #autor #autor-txt{
+        font-size: 12px;
+    }
+    body .drzac #autor #autor-slika{
+        width:60%;
+    }
+    body .drzac #slajder #txt h1{
+        font-size: 29px;
+    }
+    body .drzac #slajder{
+        height: 350px;
+        background-position: center bottom;
+    }
+    body #ceo .drzac #drz #proizvodi .proiz .slika-pr{
+        height: 70%;
+    }
+    body .drzac .modal .modal-sadrzaj #tabproiz .tab-proiz tbody tr td img{
+        width:35px;
+        height:35px;
+    }
+    body #ceo .drzac #drz #proizvodi .proiz .cena del{
+        padding-left: 6px;
+    }
+}
+@media only screen and (max-width:330px){
+    body .drzac header nav ul li .cetvrti{
+        display: none;
+    }
+}

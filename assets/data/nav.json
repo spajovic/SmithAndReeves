@@ -1,0 +1,27 @@
+[
+    {
+        "id":"prvi",
+        "tekst":"Home",
+        "href":"#"
+    },
+    {
+        "id":"drugi",
+        "tekst":"Products",
+        "href":"#drz"
+    },
+    {
+        "id":"treci",
+        "tekst":"About",
+        "href":"#forma-tekst"
+    },
+    {
+        "id":"cetvrti",
+        "tekst":"Author",
+        "href":"#"
+    },
+    {
+        "id":"korpa123",
+        "tekst":"<i class='fas fa-shopping-cart'></i>",
+        "href":"#"
+    }
+]

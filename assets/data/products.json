@@ -1,0 +1,221 @@
+[
+    {
+        "id":1,
+        "slika":{
+            "src":"slika1.jpg",
+            "alt":"Sat br 1"
+        },
+        "naziv":"Basic watch",
+        "cena":{
+            "ncena":18,
+            "scena":22
+        },
+        "ocena":4,
+        "delivery":1,
+        "best":0,
+        "tip":"sat"
+    },
+    {
+        "id":2,
+        "slika":{
+            "src":"slika2.jpg",
+            "alt":"Sat br 2"
+        },
+        "naziv":"Basic watch | Black",
+        "cena":{
+            "ncena":23,
+            "scena":30
+        },
+        "ocena":3,
+        "delivery":0,
+        "best":0,
+        "tip":"sat"
+
+    },
+    {
+        "id":3,
+        "slika":{
+            "src":"slika3.jpg",
+            "alt":"Sat br 3"
+        },
+        "naziv":"Basic watch | Creme",
+        "cena":{
+            "ncena":99,
+            "scena":129
+        },
+        "ocena":4,
+        "delivery":1,
+        "best":1,
+        "tip":"sat"
+
+    },
+    {
+        "id":4,
+        "slika":{
+            "src":"slika4.jpg",
+            "alt":"Sat br 4"
+        },
+        "naziv":"Chroma watch | Black",
+        "cena":{
+            "ncena":124,
+            "scena":150
+        },
+        "ocena":4,
+        "delivery":0,
+        "best":0,
+        "tip":"sat"
+
+    },
+    {
+        "id":5,
+        "slika":{
+            "src":"slika5.jpg",
+            "alt":"Sat br 5"
+        },
+        "naziv":"Chroma watch | Brown",
+        "cena":{
+            "ncena":150,
+            "scena":0
+        },
+        "ocena":1,
+        "delivery":0,
+        "best":0,
+        "tip":"sat"
+
+    },
+    {
+        "id":6,
+        "slika":{
+            "src":"slika6.jpg",
+            "alt":"Cipele br 1"
+        },
+        "naziv":"Italian shoes | LBrown",
+        "cena":{
+            "ncena":80,
+            "scena":99
+        },
+        "ocena":3,
+        "delivery":0,
+        "best":0,
+        "tip":"Cipele"
+    },
+    {
+        "id":7,
+        "slika":{
+            "src":"slika7.jpg",
+            "alt":"Cipele br 2"
+        },
+        "naziv":"Italian shoes | DBrown",
+        "cena":{
+            "ncena":80,
+            "scena":99
+        },
+        "ocena":3,
+        "delivery":1,
+        "best":1,
+        "tip":"Cipele"
+
+    },
+    {
+        "id":8,
+        "slika":{
+            "src":"slika8.jpg",
+            "alt":"Cipele br 3"
+        },
+        "naziv":"Italian shoes | Black",
+        "cena":{
+            "ncena":50,
+            "scena":99
+        },
+        "ocena":3,
+        "delivery":1,
+        "best":1,
+        "tip":"Cipele"
+
+    },
+    {
+        "id":9,
+        "slika":{
+            "src":"slika9.jpg",
+            "alt":"Cipele br 4"
+        },
+        "naziv":"Leather shoes | Brown",
+        "cena":{
+            "ncena":99,
+            "scena":0
+        },
+        "ocena":3,
+        "delivery":1,
+        "best":0,
+        "tip":"Cipele"
+
+    },
+    {
+        "id":10,
+        "slika":{
+            "src":"slika11.jpg",
+            "alt":"Duks br 1"
+        },
+        "naziv":"Hoodie | Grey",
+        "cena":{
+            "ncena":59,
+            "scena":0
+        },
+        "ocena":5,
+        "delivery":1,
+        "best":0,
+        "tip":"Duks"
+
+    },
+    {
+        "id":11,
+        "slika":{
+            "src":"slika13.jpg",
+            "alt":"Duks br 2"
+        },
+        "naziv":"Hoodie | DGreen",
+        "cena":{
+            "ncena":99,
+            "scena":0
+        },
+        "ocena":4,
+        "delivery":1,
+        "best":1,
+        "tip":"Duks"
+
+    },
+    {
+        "id":12,
+        "slika":{
+            "src":"slika10.jpg",
+            "alt":"Kosulja br 1"
+        },
+        "naziv":"Shirt | Blue",
+        "cena":{
+            "ncena":39,
+            "scena":69
+        },
+        "ocena":3,
+        "delivery":1,
+        "best":0,
+        "tip":"Kosulja"
+
+    },
+    {
+        "id":13,
+        "slika":{
+            "src":"slika12.jpg",
+            "alt":"Kosulja br 2"
+        },
+        "naziv":"Shirt | Grey",
+        "cena":{
+            "ncena":69,
+            "scena":0
+        },
+        "ocena":2,
+        "delivery":0,
+        "best":0,
+        "tip":"Kosulja"
+
+    }
+]

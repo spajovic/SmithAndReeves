@@ -1,0 +1,12 @@
+[
+    {
+        "id":"prvi",
+        "href":"#forma-tekst",
+        "tekst":"Our Story"
+    },
+    {
+        "id":"drugi",
+        "href":"#",
+        "tekst":"Our Blog"
+    }
+]

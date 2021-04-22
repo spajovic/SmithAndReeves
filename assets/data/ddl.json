@@ -1,0 +1,61 @@
+[
+    {
+        "id":"sel-tip",
+        "option":[
+            {
+                "value":0,
+                "tekst":"Product"
+            },
+            {
+                "value":"Watch",
+                "tekst":"Watch"
+            },
+            {
+                "value":"Shoes",
+                "tekst":"Shoes"
+            },
+            {
+                "value":"Shirt",
+                "tekst":"Shirt"
+            },
+            {
+                "value":"Hoodie",
+                "tekst":"Hoodie"
+            }
+        ]
+    },
+    {
+        "id":"sel-ime",
+        "option":[
+            {
+                "value":0,
+                "tekst":"Name"
+            },
+            {
+                "value":"AZ",
+                "tekst":"Sort A-Z"
+            },
+            {
+                "value":"ZA",
+                "tekst":"Sort Z-A"
+            }
+        ]
+    },
+    {
+        "id":"sel-cena",
+        "option":[
+            {
+                "value":0,
+                "tekst":"Price"
+            },
+            {
+                "value":"HTL",
+                "tekst":"Sort Higher to Lower"
+            },
+            {
+                "value":"LTO",
+                "tekst":"Sort Lower to Higher"
+            }
+        ]
+    }
+]
